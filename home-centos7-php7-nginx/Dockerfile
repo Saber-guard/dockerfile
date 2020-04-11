@@ -6,6 +6,7 @@ WORKDIR /mnt/
 ADD init/ /init/
 RUN /bin/bash /init/init.sh
 
-# 需要挂载docker-space到/mnt/docker-space
+#必须需挂载一个docker-space到/mnt/docker-space
 
+#启动命令
 ENTRYPOINT ["/usr/sbin/init"]
