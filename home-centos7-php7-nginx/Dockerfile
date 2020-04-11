@@ -6,7 +6,6 @@ WORKDIR /mnt/
 ADD init/ /init/
 RUN /bin/bash /init/init.sh
 
-#挂载项目目录
-VOLUME "f:/project/:/mnt/project/"
+# 需要挂载docker-space到/mnt/docker-space
 
 ENTRYPOINT ["/usr/sbin/init"]
