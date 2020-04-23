@@ -1,4 +1,4 @@
-FROM docker.io/centos:7
+FROM registry.cn-hangzhou.aliyuncs.com/codingwork/centos7:latest
 MAINTAINER zzh
 
 #替换yum源
